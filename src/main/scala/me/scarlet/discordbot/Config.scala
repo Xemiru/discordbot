@@ -2,7 +2,7 @@ package me.scarlet.discordbot
 
 import java.awt.Color
 
-import scala.collection.mutable.{ArrayBuffer, Seq ⇒ MSeq}
+import scala.collection.mutable.ArrayBuffer
 
 object Config {
     val default = Config()
@@ -11,7 +11,7 @@ object Config {
 case class Config(
     token: String                = "",
     selfbot: Boolean             = true,
-    invoker: ArrayBuffer[String] = ArrayBuffer("$"),
+    invoker: Array[String]       = Array("$"),
     color: String                = "#FFFFFF",
     name: String                 = "Generic Selfbot",
     icon: String                 = "",
